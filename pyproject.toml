@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.conf.settings"
+python_files = "test.py test_*.py *_test.py"
+markers = """
+    admin_user: And admin user will be created alogside with it's access token
+    regular_user: A regular user will be craeetd alogside with it's access token
+"""
+
+[tool.ruff]
+line-length = 79
+
